@@ -1,0 +1,52 @@
+.carouselYformulario{
+	
+	display: flex;
+	flex-direction: row;
+	background-color: $color-claro;
+	font-family:$fuente;
+	overflow: hidden;
+	width: 100%;
+    min-height: 85vh;
+
+        .carousel{
+            display: flex;
+            align-content: center;
+            overflow: hidden;
+            padding: 10px;
+      
+        .carousel__img{
+                    
+            height: 600px;
+            max-width: 100%;
+
+        .carousel__text{
+            color: $color-claro;
+            font-size: $tamaño-title;
+
+
+}
+
+}
+
+}
+
+
+
+.formulario{
+	display: block;
+	width: 50%;
+	padding: 10px;
+
+	.formulario__inicio{
+		max-width: 70%;
+		padding-top: 10px;
+        legend{
+            color: $color-oscuro;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        
+}	
+}
+
+}

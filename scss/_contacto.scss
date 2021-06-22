@@ -1,0 +1,40 @@
+.contacto{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content:space-evenly ;
+	background-color: #A8DBA8;
+	color: #051e2c;
+	font-family:'Cabin', sans-serif  ;
+	width: 100%;
+	height: 85vh;
+}
+	.contacto__bloqueuno{
+
+		max-width: 50%;
+	}
+
+	@keyframes movidaVeg{
+		0%   { left:0px; top:0px;}
+		10%  { left:100px; top:0px;}
+		50%  { left:100px; top:100px;}
+		60%  {left:0px; top:100px;}
+		100% {left:0px; top:0px;}
+	  }
+		.contacto__img{
+			width: 50%;
+			position: relative;
+			animation-name: movidaVeg;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			border-radius: 8px;
+			width: 380px;
+		}
+	
+
+		.contacto__datos{
+			display: flex;
+			flex-direction: column;
+			margin: 20px;
+			padding: -20px;
+			max-width: 100%;
+		}

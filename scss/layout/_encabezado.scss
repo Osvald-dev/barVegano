@@ -1,0 +1,47 @@
+@import "../utilities/variables";
+
+.encabezado{ 
+    display: flex;
+    align-content: space-between;
+    background-color: $color-oscuro;
+    font-family: $fuente;
+    width: 100%;
+
+            .encabezado__img{
+                width: 80px;
+
+        
+            }
+            .encabezado__titulo{
+                display: inline;
+                color: $color-claro;
+                font-weight: 800;
+                
+            }
+                .encabezado__nav{
+                    
+                    display: flex;
+                    flex-direction: column;	
+                    justify-content: flex-end;
+                    max-width: 75%;
+                    overflow: hidden;
+                    padding:0px; 
+                }  
+                  .navegador{
+                      
+                        background-color: $color-claro;
+                        
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: 10px;
+                    }
+                    .encabezado__links{
+                            padding: 4px;
+                            color: $color-oscuro;
+                            font-weight: 700;
+                    }
+                
+            }
+            
+       
+            

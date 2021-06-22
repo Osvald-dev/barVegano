@@ -1,0 +1,12 @@
+$buttons:( 
+        azul: #051e2c
+        amarillo: #0B486B
+        verde: #79BD9A
+  ); 
+
+  @each $buttons, $color in $background {
+    .reservas__button--#{$buttons} {
+        background-color: $color;
+    }
+ }
+ 

@@ -1,0 +1,79 @@
+
+@import "utilities/variables";
+@import "base/reset";
+@import "base/typo";
+@import "layout/encabezado";
+@import "layout/footer";
+@import "views/home";
+@import "contacto";
+@import "reservas";
+@import "nosotros";
+@import "404";
+
+
+	 
+
+/* Mediqueries  */
+
+@media only screen and (min-width:375px) and (max-width:991px) {
+.encabezado__nav{
+	display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+	max-width: 25%;
+
+
+
+	.encabezado__img {
+		width: 50px;
+	}
+
+}
+
+.carouselYformulario{
+display: flex;
+align-items: center;
+width: 100%;
+
+}
+
+
+
+}
+
+
+@media only screen and (max-width:375px) {
+
+.encabezado__nav{
+			display: flex;
+			align-items: flex-start;
+			max-width: 25%;
+
+			.encabezado__img{
+					width: 30px;
+}
+}	
+
+.carouselYformulario{
+	background-color: #051e2c;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+	.carousel{
+		max-height: 80vh;
+
+		.carousel__img{
+			height:280px;
+		}
+	}
+}
+
+
+legend{
+	color: #A8DBA8;
+	font-weight: 700;
+	font-size: 35px;
+}
+}

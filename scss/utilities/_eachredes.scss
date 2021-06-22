@@ -1,0 +1,18 @@
+@import "variables";
+
+$footer: (
+    facebook: $color-oscuro,
+    instagram: $color-claro,
+    twitter: $color-base,
+);
+@each $red, $color in $footer{
+    .btn--#{$red}{
+        background: $color;
+        height: 55px;
+					width: 60px;
+					padding: 4px;
+    }
+    
+}
+
+ 

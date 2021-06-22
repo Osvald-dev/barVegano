@@ -1,0 +1,27 @@
+@import "../utilities/variables";
+
+.footer{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-foot;
+  width: 100%;
+        
+$footer: (
+    facebook: $color-oscuro,
+    instagram: $color-claro,
+    twitter: $color-base,
+);
+
+@each $red, $color in $footer{
+    .btn--#{$red}{
+        background: $color;
+        height: 55px;
+        width: 60px;
+        padding: 4px;
+    }
+    
+}
+
+}

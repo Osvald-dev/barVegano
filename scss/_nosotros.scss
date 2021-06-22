@@ -1,0 +1,58 @@
+.nosotrosInfo{
+	
+	background-color:#051e2c;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column-reverse;
+	min-height: 85vh;
+	width: 100%;
+}
+ .nosotros__text{
+	 display: flex;
+	 flex-direction: row;
+	 background-color:#0B486B;
+	 border-radius: 8px;
+	
+ }
+		.nosotros__titulo{
+			color: #A8DBA8;
+			font-family:'Cabin', sans-serif  ;
+			font-size: 70px;
+		}
+		.nosotros__parrafo{
+			color: #A8DBA8;
+			font-family:'Cabin', sans-serif  ;
+			font-size: 45px;
+		}
+		.nosotros__img{
+			width: 480px;
+		}
+
+.nosotros{
+	background-image: -webkit-linear-gradient(#0B486B,  #79BD9A );
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding:10px;
+	
+}
+	.nosotros__card{
+		font-family:'Cabin', sans-serif  ;
+		background-color:transparent ;
+		color: aliceblue;
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	.card-link{
+		color: #051e2c;
+		text-decoration: none;
+
+	}
+	.card-link:hover{
+		color:black;
+		font-size: 24px;
+		
+		
+	}
