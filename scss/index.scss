@@ -14,9 +14,17 @@
 
 	 
 body{
-	background-color:#79BD9A ;
+	background-color: aliceblue  ;
 }
 /* Mediqueries  */
+
+
+     
+@media only screen and (min-width:1440px) {
+	.eventos__flip{
+	  height: 30vh !important;
+	}
+  }   
 
 @media only screen and (min-width:375px) and (max-width:991px) {
 .encabezado__nav{
