@@ -3,10 +3,12 @@
 .footer{
   align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: $color-foot;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color:$color-oscuro;
+  height: 10vh;
   width: 100%;
+  
         
 $footer: (
     facebook: $color-oscuro,
@@ -16,10 +18,10 @@ $footer: (
 
 @each $red, $color in $footer{
     .btn--#{$red}{
-        background: $color;
+        border: 4px $color;
         height: 55px;
         width: 60px;
-        padding: 4px;
+        padding: 10px;
     }
     
 }

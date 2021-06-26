@@ -1,23 +1,22 @@
+@import "../utilities/variables";
+
 .carouselYformulario{
 	
-	display: flex;
-	flex-direction: row;
 	background-color: $color-claro;
 	font-family:$fuente;
 	overflow: hidden;
 	width: 100%;
-    min-height: 85vh;
-
+   
+  
         .carousel{
             display: flex;
-            align-content: center;
             overflow: hidden;
-            padding: 10px;
+            width: 100%;
       
         .carousel__img{
                     
             height: 600px;
-            max-width: 100%;
+            width: 800px;
 
         .carousel__text{
             color: $color-claro;
@@ -33,13 +32,17 @@
 
 
 .formulario{
-	display: block;
-	width: 50%;
+	
+	
 	padding: 10px;
 
 	.formulario__inicio{
-		max-width: 70%;
+        margin:3px;
+        padding:2px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+		width: 100%;
 		padding-top: 10px;
+        
         legend{
             color: $color-oscuro;
             font-size: 30px;
@@ -49,4 +52,114 @@
 }	
 }
 
+}
+
+.enlaceUno{
+    align-items: center;
+    margin:3px;
+    padding:2px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    color: $color-oscuro;
+    .enlace__flex{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+       
+    .img__enlace{
+        margin-bottom: 4px;
+        display: block;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+        width: 140px;
+    }
+
+    .enlace__parrafo{
+        color: $color-oscuro;
+        text-shadow: aliceblue 2px 1px;
+        font-size: 22px;
+        font-weight: 800;
+    }
+   
+
+}   
+
+.ubicacion{
+    margin: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    font-family: $fuente;
+    .ubicacion__uno{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        z-index: 5;
+    .titulo__ubicacion{
+        margin: 4px;
+        font-size: 40px;
+        font-family: $fuente;
+    .img__ubicacion{
+            margin-bottom: 4px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+            max-width: 100%;
+
+        }
+    }
+}
+
+.parrafo__ubicacion{
+    color: $color-claro;
+    background-color: $color-oscuro;
+    font-size: 28px !important;
+    font-family: $fuente;
+    font-weight: 400;
+    text-shadow: 0 0 3px $color-oscuro, 0 0 5px $color-foot;
+    }
+  
+    .ubicacion__dos{
+       
+        padding:8px;
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap:wrap;
+        
+        
+        @keyframes delivery{
+            0%   { left:0px; top:0px;}
+            50%  { left:150px; top:0px;}
+            
+          }
+        .img__delivery{
+            width: 100%;
+			position: relative;
+			animation-name: delivery;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+            margin-top: 4px;
+			border-radius: 8px;
+			width: 240px;
+        }
+        .titulo__pedido{
+            text-decoration: none;
+            color: $color-oscuro;
+            margin: 10px;
+            font-size: 40px;
+            text-shadow: 0 0 3px $color-oscuro, 0 0 5px $color-foot;
+            font-family: $fuente;
+        }
+        .social__img{
+           position: fixed;
+           top: 10px;
+           right: 20px;
+            width:80px;
+            z-index: 1;
+        }
+}
 }

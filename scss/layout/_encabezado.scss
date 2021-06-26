@@ -1,47 +1,71 @@
 @import "../utilities/variables";
 
 .encabezado{ 
-    display: flex;
-    align-content: space-between;
+    
     background-color: $color-oscuro;
     font-family: $fuente;
     width: 100%;
-
+}
             .encabezado__img{
                 width: 80px;
-
-        
             }
+            .encabezado__img:hover{
+                translate: 2px 3px 1px;
+                
+            }
+            
             .encabezado__titulo{
                 display: inline;
                 color: $color-claro;
                 font-weight: 800;
-                
+                font-size: 25px;
             }
+        
+       
+          
                 .encabezado__nav{
-                    
+                    align-items: flex-end;
                     display: flex;
-                    flex-direction: column;	
+                    flex-direction: row;	
                     justify-content: flex-end;
-                    max-width: 75%;
+                    max-width: 100%;
                     overflow: hidden;
                     padding:0px; 
-                }  
+                    
                   .navegador{
-                      
-                        background-color: $color-claro;
-                        
+                        color: $color-claro !important;
+                        background-color: $color-oscuro;
                         display: flex;
                         justify-content: flex-end;
                         padding: 10px;
+                        width: 100%;
+
+                    .nav__links:hover{
+                        transition-property: background-color, color;
+                        transition-duration: 1s;
+                        transition-timing-function: ease-out;
+                        -webkit-transition-property: background-color, color;
+                        -webkit-transition-duration: 1;
+                        -o-transition-property: background-color, color;
+                        -o-transition-duration: 1s;
+                        background-color: $color-claro !important;
+                        color: $color-oscuro !important;
+                        font-weight: 500;
                     }
-                    .encabezado__links{
-                            padding: 4px;
-                            color: $color-oscuro;
-                            font-weight: 700;
-                    }
-                
-            }
-            
-       
-            
+    
+                    .nav__links{
+                         
+                            background-color: $color-oscuro;
+                            padding: 20px !important;
+                            color: $color-claro !important;
+                            font-weight: 500 !important;
+
+                        }
+                    .nav__hambur{
+                    color: $color-claro !important;
+              
+                }
+            }   }
+        
+
+    
