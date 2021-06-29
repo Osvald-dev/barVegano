@@ -52,7 +52,7 @@ table {
   font-family: "Cabin", sans-serif;
   width: 100%;
   margin-bottom: 20px;
-  border-bottom: 0.5 black;
+  border-radius: 5px 5px;
   box-shadow: 0px 5px 6px 3px #4b8688; }
 
 .encabezado__img {
@@ -68,18 +68,13 @@ table {
   font-size: 25px; }
 
 .encabezado__nav {
-  align-items: flex-end;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   max-width: 100%;
   overflow: hidden;
-  padding: 0px; }
+  padding: 4px;
+  margin: 10px 0px 0px 25px; }
   .encabezado__nav .navegador {
     color: #A8DBA8 !important;
     background-color: #051e2c;
-    display: flex;
-    justify-content: flex-end;
     padding: 10px;
     width: 100%; }
     .encabezado__nav .navegador .nav__links:hover {
@@ -131,15 +126,17 @@ table {
   overflow: hidden;
   width: 100%; }
   .carouselYformulario .carousel {
-    display: flex;
+    position: relative;
+    left: -10px;
     overflow: hidden;
     width: 100%; }
     .carouselYformulario .carousel .carousel__img {
       height: 600px;
       width: 800px; }
-      .carouselYformulario .carousel .carousel__img .carousel__text {
-        color: #A8DBA8;
-        font-size: 30px; }
+      .carouselYformulario .carousel .carousel__img .carousel-caption {
+        color: #A8DBA8 !important;
+        font-size: 30px !important;
+        font-weight: 500 !important; }
   .carouselYformulario .formulario {
     padding: 10px; }
     .carouselYformulario .formulario .formulario__inicio {
@@ -217,14 +214,14 @@ table {
   0% {
     left: 0px;
     top: 0px; }
-  50% {
-    left: 150px;
+  20% {
+    left: 100px;
     top: 0px; } }
     .ubicacion .ubicacion__dos .img__delivery {
       width: 100%;
       position: relative;
       animation-name: delivery;
-      animation-duration: 4s;
+      animation-duration: 6s;
       animation-iteration-count: infinite;
       margin-top: 4px;
       border-radius: 8px;

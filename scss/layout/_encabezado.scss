@@ -4,9 +4,9 @@
     
     background-color: $color-oscuro;
     font-family: $fuente;
-     width: 100%;
+    width: 100%;
     margin-bottom: 20px;
-    border-bottom: 0.5 black;
+    border-radius: 5px 5px;
     box-shadow: 0px 5px 6px 3px rgb(75, 134, 136);
     
 }
@@ -28,19 +28,15 @@
        
           
                 .encabezado__nav{
-                    align-items: flex-end;
-                    display: flex;
-                    flex-direction: row;	
-                    justify-content: flex-end;
+                    
                     max-width: 100%;
                     overflow: hidden;
-                    padding:0px; 
-                    
+                    padding:4px; 
+                    margin: 10px 0px 0px 25px;
                   .navegador{
                         color: $color-claro !important;
                         background-color: $color-oscuro;
-                        display: flex;
-                        justify-content: flex-end;
+                       
                         padding: 10px;
                         width: 100%;
 

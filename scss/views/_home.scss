@@ -9,19 +9,20 @@
    
   
         .carousel{
-            display: flex;
+            position: relative;
+            left:-10px;
             overflow: hidden;
             width: 100%;
-      
+            
         .carousel__img{
                     
             height: 600px;
             width: 800px;
 
-        .carousel__text{
-            color: $color-claro;
-            font-size: $tamaño-title;
-
+        .carousel-caption{
+            color: $color-claro !important;
+            font-size: 30px !important;
+            font-weight: 500 !important;
 
 }
 
@@ -133,14 +134,14 @@
         
         @keyframes delivery{
             0%   { left:0px; top:0px;}
-            50%  { left:150px; top:0px;}
+            20%  { left:100px; top:0px;}
             
           }
         .img__delivery{
             width: 100%;
 			position: relative;
 			animation-name: delivery;
-			animation-duration: 4s;
+			animation-duration: 6s;
 			animation-iteration-count: infinite;
             margin-top: 4px;
 			border-radius: 8px;
