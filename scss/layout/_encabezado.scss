@@ -10,11 +10,15 @@
     box-shadow: 0px 5px 6px 3px rgb(75, 134, 136);
     
 }
-          .encabezado__img{
-                width: 80px;
-            }
+            .encabezado__aling{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            .encabezado__img{
+                    width: 80px;
+                }
             .encabezado__img:hover{
-                translate: 2px 3px 1px;
+                width: 83px;
                 
             }
             
@@ -33,13 +37,13 @@
                     overflow: hidden;
                     padding:4px; 
                     margin: 10px 0px 0px 25px;
-                  .navegador{
+                  .encabezado__navegador{
                         color: $color-claro !important;
                         background-color: $color-oscuro;
-                       
                         padding: 10px;
                         width: 100%;
-
+                     
+                      
                     .nav__links:hover{
                         transition-property: background-color, color;
                         transition-duration: 1s;
@@ -61,12 +65,11 @@
                             font-weight: 500 !important;
 
                         }
-                    .nav__hambur{
-                    color: $color-claro !important;
-              
-                }
-            }   }
+                        } 
+                      }
+                    }
+                    
+     
         
-        
-  
+
     

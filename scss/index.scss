@@ -14,16 +14,14 @@
 
 	 
 body{
-	background-color: aliceblue  ;
+	background-image: linear-gradient(#051e2c, aliceblue);
 }
 /* Mediqueries  */
 
 
      
-@media only screen and (min-width:1440px) {
-	.eventos__flip{
-	  height: 30vh !important;
-	}
+@media only screen and (min-width:768px) {
+
   }   
 
 @media only screen and (min-width:375px) and (max-width:991px) {
@@ -52,6 +50,10 @@ width: 100%;
 	
 	width: 160px;
 }
+.intro_evento{
+	flex-direction: column;
+	justify-content: center;
+}
 
 }
 
@@ -61,8 +63,8 @@ width: 100%;
 .encabezado__nav{
 			display: flex;
 			align-items: flex-start;
-			max-width: 25%;
-
+			width: 100%;
+			margin:0px;
 			.encabezado__img{
 					width: 30px;
 }
@@ -84,7 +86,6 @@ width: 100%;
 	}
 }
 
-
 legend{
 	color: #A8DBA8;
 	font-weight: 700;
@@ -94,5 +95,12 @@ legend{
 	
 	width: 100px;
 }
+.eventos__section{
+	min-height: 180vh;
+}
+.eventos__flip{
+	height: 120vh;
 }
 
+
+}

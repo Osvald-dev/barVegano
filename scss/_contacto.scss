@@ -21,19 +21,18 @@
 		100% {left:0px; top:0px;}
 	  }
 		.contacto__img{
-			width: 50%;
+			
 			position: relative;
 			animation-name: movidaVeg;
 			animation-duration: 4s;
 			animation-iteration-count: infinite;
 			border-radius: 8px;
-			width: 380px;
+			
 		}
 	
 
 		.contacto__datos{
-			display: flex;
-			flex-direction: column;
+			
 			margin: 20px;
 			padding: -20px;
 			max-width: 100%;

@@ -1,24 +1,82 @@
 @import "./utilities/variables";
 
- .eventos{
-    height: 100vh;
+.intro_evento{
+  align-items: center;
+  color: aliceblue;
+  display: flex;
+  font-family: $fuente;
+  font-size: $tamaño-fuente;
+    
+      .intro_cajauno{
+        border-radius: 10px;
+        background-image: url("../img/patio-lleno.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        height: 85vh;
+      }
+      .intro_titulo{
+        color: black;
+        background-color:rgba(224, 248, 0, 0.2); ;
+        font-size: 80px;
+        text-align: center;
+        padding: 5px;
+      }
+      .intro_text{
+        background-color: rgba(225, 179, 64, 0.2);
+        font-size: 30px ;
+        color: black; 
+       font-weight: 600;
+        margin-top: 5rem;
+        padding: 10px;
+       
+      }
+         }    
+   
+
+  .eventos__img{
+      
+      width: 240px;
+  }
+  .titulo__eventos{
+      margin:3px;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      font-size: 22px;
+      font-family: $fuente;
+      color: $color-oscuro;
+  }
+  .eventos__parrafo{
+      
+      padding:10px;
+      font-family: $fuente;
+      font-size: 20px;
+      color: aliceblue;
+      font-weight: 500;
+    
+}
+
+.eventos__section{
+      background-color: $color-claro;
+      background-image: url("../img/icono-b.jpg");
+      background-repeat: no-repeat;
+      background-position:center center;
+
+.eventos{
+    
+  height: 140vh;
 
  
- }
+      .eventos__flip{
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          height: 45vh;
 
-.eventos__flip{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow:5px 8px rgba(39, 16, 16, 0.3);
-    padding: 20px;
-
-
-  }
+        }
         .flip-box {
             background-color: transparent;
-            width: 370px;
-            height: 200px;
+            width: 50%;
+            height: 100%;
             perspective: 1000px; 
           }
           
@@ -58,48 +116,15 @@
             
             transform: rotateY(180deg);
           }
+         
+         
+          .boton__reserva{
+            font-family: $fuente !important;
+            position: relative !important;
+            left: 26rem !important;
+          }
+        }
        
-        
 
 
-
-      .intro_evento{
-        align-items: center;
-        display: flex;
-        justify-content: center;
-     
-      .contenedor__img{
-        opacity: 0.5;
-        display: flex;
-        align-content: center;
-        width: 50%;
       }
-      .contenedor__img:hover{
-
-        opacity: 1;
-        
-      }
-    }    
-
-
-        .eventos__img{
-          
-            width: 100%;
-        }
-        .titulo__eventos{
-            margin:3px;
-            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-            font-size: 22px;
-            font-family: $fuente;
-            color: $color-oscuro;
-        }
-        .eventos__parrafo{
-            
-            padding:10px;
-            font-family: $fuente;
-            font-size: 20px;
-            color: aliceblue;
-            font-weight: 500;
-          
-    }
-  

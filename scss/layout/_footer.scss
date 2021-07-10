@@ -1,22 +1,19 @@
 @import "../utilities/variables";
 
 .footer{
-  align-items: center;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
   background-color:$color-oscuro;
   height: 10vh;
   width: 100%;
-  
+  display: flex;
+  justify-content: flex-end;
         
-$footer: (
-    facebook: $color-oscuro,
-    instagram: $color-claro,
-    twitter: $color-base,
+$hovered: (
+    facebook: #fafafa,
+    instagram: #fefefe,
+    twitter: #fdfdfd,
 );
 
-@each $red, $color in $footer{
+@each $red, $color in $hovered{
     .btn--#{$red}{
         border: 4px $color;
         height: 55px;

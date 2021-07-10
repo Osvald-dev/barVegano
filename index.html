@@ -18,20 +18,19 @@
 <body >
     
   <header class="encabezado container"> 
-    <div class="row">
-        <div  class="col-sm-3 col-md-4 col-lg-2 ">
+    <div class="row encabezado__aling">
+        <div  class="col-sm-2 col-md-2 col-lg-2 ">
           <a href="./index.html"> <img class="encabezado__img" src="./img/icono-b.jpg" alt="iconoHamburguesa"></a>
           <h1 class="encabezado__titulo">Casabella</h1>
         </div>        
 
-        <div class="encabezado__nav col-sm-9 col-md-8 col-lg-8 ">        
+        <div class="encabezado__nav col-sm-2 col-md-6 col-lg-6 ">        
           <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="navegador">
-                <a class="nav__links navbar-brand" href="#">Inicio</a>
+            <div class="encabezado__navegador">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="nav__hambur navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navegador__fondo collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item">
                       <a class="nav__links nav-link" href="./páginas/eventos.html">Eventos</a>
@@ -106,69 +105,57 @@
       </div>     
       </div>
     <div class="formulario col-sm-12 col-md-6 col-lg-4" >
-      <form class="formulario__inicio">
-      <div >
-        <legend >Reserva tu mesa</legend>
-        <label for="exampleInputEmail1" class="form-label"></label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div  id="emailHelp" class="form-text">Ingresa tu e-mail para reservar</div>
-        <button type="button" class="btn btn-success">Enviar</button>
-      </div>
-      </form>  
       <div class="enlaceUno">
+        <h2 class="titulo-secundario">Eventos todo el mes!!</h2>
         <span class="enlace__parrafo">BBQ events</span>
-        <div class="enlace__flex">
-        <a href="./páginas/eventos.html"></a><img class="img__enlace" src="./img/eventos1.jpg" alt="imagen-eventos-veganos" ></a>
-        <a href="./páginas/eventos.html"><img class="img__enlace" src="./img/evento3.jpg" alt="imagen-eventos-veganos"></a>
-        <p class="enlace__parrafo">
-        Brochettes, Fajitas, Tacos, Pizzas, Sandwichs y mucho mas en nuestros BBQ Vegan Eventos. Show y Eventos al medio día!
-        </p>
-        </div>
+          <div class="enlace__flex">
+            <a href="./páginas/eventos.html"></a><img class="img__enlace" src="./img/eventos1.jpg" alt="imagen-eventos-veganos" ></a>
+            <a href="./páginas/eventos.html"><img class="img__enlace" src="./img/evento3.jpg" alt="imagen-eventos-veganos"></a>
+            <p class="enlace__parrafo">
+              Brochettes, Fajitas, Tacos, Pizzas, Sandwichs y mucho mas en nuestros BBQ Vegan Eventos. Show y Eventos al medio día!
+            </p>
+          </div>
       </div>
     </div> 
   </div> 
 
 </section>
-
-        <section class="container" >
-            <div class="ubicacion">
-                  <div class="row">
-                      <div class="ubicacion__uno col-sm-8 col-md-6 col-lg-7">
-                          <h3 class="titulo__ubicacion">Nuestra Ubicación</h3>
-                          <a href="https://www.google.com/search?client=avast-a-1&q=agua%20canta%20ubicacion&oq=agua+canta+ubicacion&aqs=avast..69i57.2125j0j4&ie=UTF-8&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=17842679527602122556&lqi=ChRhZ3VhIGNhbnRhIHViaWNhY2lvbkiS18DXy6uAgAhaFBAAEAEYABgBIgphZ3VhIGNhbnRhkgEFc3RvcmU&ved=2ahUKEwj557G3orHxAhUlqJUCHQB3DhIQvS4wAHoECAQQGw&rlst=f#rlfi=hd:;si:17842679527602122556,l,ChRhZ3VhIGNhbnRhIHViaWNhY2lvbkiS18DXy6uAgAhaFBAAEAEYABgBIgphZ3VhIGNhbnRhkgEFc3RvcmU;mv:[[-31.215301399999998,-64.2999181],[-31.2680615,-64.304915]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2">Ubicación</a>
-                          <img class="img__ubicacion" src="./img/ubicacion.jpg" alt="ubicacion-bar"></a>
-                          <p class="parrafo__ubicacion">
-                            A 15 minutos del centro de nuestra ciudad (Cordoba). Camino a mendiolaza
-                          </p>
-                      </div>
-                      <div class="ubicacion__dos col-sm-4 col-md-6 col-lg-5">
-                          <h4 ><a class="titulo__pedido" href="./páginas/contacto.html">Hace tu Pedido Aquí</a> </h4>
-                          <img class="img__delivery" src="./img/Delivery.jpg" alt="delivery-en-moto-dibujo">
-                          
-                      </div>
-                  </div>
-            </div>   
-        </section>       
+<section class="fondo__ubicacion container">
+    <div >
+      
+    </div>
+</section>    
+<section class="container" >
+  <div class="row ubicacion">
+    <div class="ubicacion__uno col-sm-8 col-md-6 col-lg-7">
+      <h3 class="titulo__ubicacion">Nuestra Ubicación</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5730.320324288543!2d-64.16611629041748!3d-31.351559449438614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432991f9ba443a9%3A0x5bf643af0d76ffbc!2sPROCREAR%20LICEO!5e0!3m2!1ses-419!2sar!4v1625340582924!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <p class="parrafo__ubicacion">
+        A 15 minutos del centro de nuestra ciudad (Cordoba). Camino a mendiolaza
+      </p>
+    </div>
+    <div class="ubicacion__dos col-sm-4 col-md-6 col-lg-5">
+      <h4 ><a class="titulo__pedido" href="./páginas/contacto.html">Hace tu Pedido Aquí</a> </h4>
+      <img class="img__delivery" src="./img/Delivery.jpg" alt="delivery-en-moto-dibujo">
+    </div>
+  </div>
+</section>       
     
         
         
-        <footer class="footer container">
-          
-                 
-                          <a href="https://wwww.facebook.com">
-                          <img class="btn--facebook" src="./img/facebook.png" alt="iconoFacebook"></a>
-                 
-                          <a href="https://www.twitter.com">
-                          <img class="btn--instagram" src="./img/tuiter.png" alt="iconoTweeter"></a>
-                     
-                  
-                          <a href="htttps://www.instagram.com">
-                          <img class="btn--twitter" src="./img/instragram-icono.png" alt="iconoInstagram"></a>
-                     
-               
-        </footer>
+  <footer class="footer container">
+    <a href="https://wwww.facebook.com">
+    <img class="btn--facebook" src="./img/facebook.png" alt="iconoFacebook"></a>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
+    <a href="https://www.twitter.com">
+    <img class="btn--instagram" src="./img/tuiter.png" alt="iconoTweeter"></a>
+
+
+    <a href="htttps://www.instagram.com">
+    <img class="btn--twitter" src="./img/instragram-icono.png" alt="iconoInstagram"></a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
     
 </body>
 </html>
