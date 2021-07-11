@@ -29,27 +29,22 @@ body{
 	display: flex;
     flex-direction: row;
     align-items: flex-end;
-	max-width: 25%;
-
-
-
+	max-width: 50%;
 	.encabezado__img {
 		width: 50px;
-	}
-
-}
-
-.carouselYformulario{
-display: flex;
-align-items: center;
-width: 100%;
-
-}
-
-.img__delivery{
 	
-	width: 160px;
 }
+}
+.carouselYformulario{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	.carousel__img{
+		height:380px;
+		max-width: 100%;
+}
+}
+
 .intro_evento{
 	flex-direction: column;
 	justify-content: center;
@@ -59,42 +54,36 @@ width: 100%;
 
 
 @media only screen and (max-width:375px) {
-
 .encabezado__nav{
 			display: flex;
 			align-items: flex-start;
-			width: 100%;
 			margin:0px;
-			.encabezado__img{
-					width: 30px;
 }
+.encabezado__img{
+	width: 40px;
 }
-.carouselYformulario{
-	background-color: #051e2c;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
 
 	.carousel{
 		max-height: 80vh;
 
 		.carousel__img{
 			height:280px;
-			width: 370px;
+			max-width: 370px;
 		}
 	}
-}
+
+	.enlaceUno_img{
+		width: 60%;
+	}
+	
+
 
 legend{
 	color: #A8DBA8;
 	font-weight: 700;
 	font-size: 35px;
 }
-.img__delivery{
-	
-	width: 100px;
-}
+
 .eventos__section{
 	min-height: 180vh;
 }

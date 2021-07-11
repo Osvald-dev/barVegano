@@ -1,16 +1,11 @@
 .reservas{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
-	background-color: #051e2c;
+	
 	
 		.reservas__bloqueuno{
-			display: flex;
-			flex-wrap: wrap;
-			background-color: #051e2c;
 			
-
-
 		.reservas__titulo{
 			display: inline-block;
 			text-align: center;

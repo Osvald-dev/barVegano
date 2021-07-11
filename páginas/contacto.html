@@ -17,15 +17,15 @@
     <link rel="shortcut icon" href="../img/favicon.png">
 </head>
 <body>
-  <header class="encabezado container"> 
+  <header class="encabezado container-fluid"> 
     <div class="row encabezado__aling">
 
-           <div  class="col-sm-2 col-md-2 col-lg-2 ">
+           <div  class="col">
                  <a href="../index.html"> <img class="encabezado__img" src="../img/icono-b.jpg" alt="iconoHamburguesa"></a>
                  <h1 class="encabezado__titulo">Casabella</h1>
            </div>        
 
-           <div class="encabezado__nav col-sm-2 col-md-6 col-lg-6 ">        
+           <div class="encabezado__nav col">        
                <nav class="navbar navbar-expand-lg navbar-light">
                  <div class="encabezado__navegador">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,37 +55,35 @@
 </header>
 
     <section class="contacto container">
-      <div class="contacto__bloqueuno">
-        <h3></h3>
-        <img class="contacto__img" src="../img/fondo2.jpg" alt="IconoBurgerVeg" width="48px">  
+       <div>
+        <h3 class="contacto_titulo">Nuestro equipo se pondrá en contacto contigo</h3>
       </div>
-
-       <form class="contacto__datos">
-           <div class="input-group mb-3">
-              <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-           </div>
-           <div class="input-group mb-3">
-              <span class="input-group-text" id="inputGroup-sizing-default">Edad</span>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-           </div>
-           <div class="input-group mb-3">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">Motivo de Contacto</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Enviar</a></li>
-                <li><a class="dropdown-item" href="#">Borrar</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../index.html">Volver al Inicio</a></li>
-              </ul>
-              <input type="text" class="form-control" aria-label="Text input with dropdown button">
-           </div>
-       </form>
-     
+      </div>
+      <div class="contacto_form"> 
+        <label class="control-label" >Nombre y apellido<span class="form-required" title="Este campo es obligatorio.">*</span></label>
+        <input required="required" class="form-control form-text required" type="text" id="" name="submitted[nombre_y_apellido]" value="" size="60" maxlength="128">
+      </div>
+      <div class="contacto_form">
+          <label class="control-label" >Teléfono <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+          <input required="required" class="form-control form-text form-number required" type="text" name="submitted[telefono]" step="any">
+      </div>
+      <div class="contacto_form">
+        <label class="control-label" >Correo electrónico <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+        <input required="required" class="email form-control form-text form-email required" type="email"  name="submitted[correo_electronico]" size="60">
+      </div>
+      <div class="contacto_form">
+        <label class="control-label">¿Cuál es tu consulta? <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+        <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+          <textarea required="required" class="form-control form-textarea required" name="submitted[cual_es_tu_consulta]" cols="60" rows="5"></textarea>
+          <div class="grippie"></div>
+        </div>
+      </div>
+    
     </section>
 
 
     
-<footer class="footer container">
+<footer class="footer container-fluid">
       <a href="https://wwww.facebook.com">
       <img class="btn--facebook" src="../img/facebook.png" alt="iconoFacebook"></a>
       <a href="https://www.twitter.com">
