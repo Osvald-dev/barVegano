@@ -1,48 +1,102 @@
 .reservas{
+	background-color: aliceblue;
+	width: 100%;
+	text-align: center;
+    min-height: 85vh;
+   
+}
+
+.reservas_bloque{
+	background-color: aliceblue;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	min-height: 86vh;
+	width: 100%;
 	flex-wrap: wrap;
-	
-	
-		.reservas__bloqueuno{
-			
-		.reservas__titulo{
-			display: inline-block;
-			text-align: center;
-			color: #A8DBA8;
-			font-size: 60px;
-			font-family:$fuente; 
-			font-weight: 700;
-			padding:10px;
-			margin:5px;
-
-		.reservas__img{
-				position: relative;
-				max-width: 100%;
-				padding: 16px;
-				z-index: 1;
-				
-		.reservas__lottie{
-			position: absolute;
-			z-index: 8;
-			width: 300px;
+    justify-content: center;
 }
-}	
-}
-}
-
-
-.reservas__bloquedos{
+.reservas_bloque1{
 	display: flex;
-	color: #A8DBA8;
-	border-bottom: #051e2c;
-	flex-direction: column;
-	align-items: left;
-	font-weight: 700;
-	font-family:$fuente; 
-	padding:10px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	width: 100%;
 
 }
+.reservas_titulo{
+			color: #051e2c;
+			font-family:'Cabin', sans-serif  ;
+			font-size: 70px;
+			text-align: center;
+	}
+.reservas_parrafo{
+	color: #0B486B;
+	font-family:'Cabin', sans-serif  ;
+	font-size: 32px;
+	margin-top: 50px;
+	padding: 2rem;
+	line-height: initial;
+	text-align: center;
+	
+}	
+
+.reservas__form{
+	background-image: url(../img/casabella.jpg);
+	background-size: cover;
+	display: flex;
+	color:black;
+	text-shadow: 3px 3px 10px white;
+	text-align: center;
+	font-family:$fuente; 
+	flex-wrap: wrap;
+	overflow: hidden;
+	justify-content: center;
+	min-height: 85vh;
+}
+.reservas_inputs{
+	align-items: center;
+	border: 0;
+	display: flex;
+	font-weight: 600;
+	flex-direction: column;
+    font-size: 1.5rem;
+	
+    margin: 0.7rem;
+	padding: 0.2rem;
+    width: 55%;
+    
+    
 }
 
+
+
+.reservas_buttom{
+	font-family: $fuente;
+	font-size: 1.4rem;
+	border: 0;
+	margin: 1rem;
+	background-color:$color-foot;
+	text-align: center;
+	height: 3rem;
+	width: 45%;
+}
+
+.reservas_buttom:hover{
+	background-color: white;
+	color: $color-oscuro;
+	font-weight: 700;
+
+}
+.reservas_buttom1{
+	width: 50%;
+	font-family: $fuente;
+	font-size: 1.4rem;
+	border: 0;
+	margin: 1rem;
+	background-color:$color-oscuro;
+	color: white;
+	text-align: center;
+	height: 3rem;
+	width: 45%;
+}

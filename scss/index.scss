@@ -12,42 +12,46 @@
 @import "404";
 
 
+*{
+	margin: 0;
+	padding: 0;
+}
 	 
 body{
-	background-image: linear-gradient(#051e2c, aliceblue);
+	background-image: linear-gradient(#051e2c, rgb(4, 21, 36));
 }
 /* Mediqueries  */
+@media only screen and (max-width:679px){
 
+}
 
-     
-@media only screen and (min-width:768px) {
-
-  }   
-
-@media only screen and (min-width:375px) and (max-width:991px) {
+@media only screen and (max-width:991px) {
 .encabezado__nav{
 	display: flex;
     flex-direction: row;
     align-items: flex-end;
 	max-width: 50%;
-	.encabezado__img {
-		width: 50px;
-	
+	justify-content: flex-end;
 }
-}
-.carouselYformulario{
-	display: flex;
-	align-items: center;
-	width: 100%;
-	.carousel__img{
-		height:380px;
-		max-width: 100%;
-}
-}
+
 
 .intro_evento{
 	flex-direction: column;
 	justify-content: center;
+}
+.reservas__form{
+	width: 100%;
+}
+.reservas__img{
+	width: 100%;
+}
+.enlaceUno_img{
+	width: 45%;
+}
+.nosotros{
+	flex-direction: column;
+    padding: 0.3rem;
+	align-items: center;
 }
 
 }
@@ -59,10 +63,6 @@ body{
 			align-items: flex-start;
 			margin:0px;
 }
-.encabezado__img{
-	width: 40px;
-}
-
 	.carousel{
 		max-height: 80vh;
 
@@ -72,12 +72,7 @@ body{
 		}
 	}
 
-	.enlaceUno_img{
-		width: 60%;
-	}
 	
-
-
 legend{
 	color: #A8DBA8;
 	font-weight: 700;
@@ -90,6 +85,13 @@ legend{
 .eventos__flip{
 	height: 120vh;
 }
-
-
+.enlaceUno_img{
+	width: 100%;
+}
+.nosotros__titulo{
+	font-size: 55px;
+}
+.reservas_inputs{
+	width: 80%;
+}
 }

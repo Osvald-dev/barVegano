@@ -1,26 +1,18 @@
 @import "../utilities/variables";
 
-.footer{
-  background-color:$color-oscuro;
+.footer {
+  background-color: $color-oscuro;
   height: 10vh;
-  width: 100%;
+  
   display: flex;
   justify-content: flex-end;
-        
-$hovered: (
-    facebook: #fafafa,
-    instagram: #fefefe,
-    twitter: #fdfdfd,
-);
 
-@each $red, $color in $hovered{
-    .btn--#{$red}{
-        border: 4px $color;
-        height: 55px;
-        width: 60px;
-        padding: 10px;
-    }
-    
 }
+.link_red{
+  margin: 8px;
+}
+
+.redsocial {
+ min-width: 40px;
 
 }

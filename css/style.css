@@ -48,17 +48,17 @@ table {
   border-spacing: 0; }
 
 .encabezado {
-  background-image: linear-gradient(135deg, #051e2c 10%, #0B486B 100%);
+  background-color: #051e2c;
   font-family: "Cabin", sans-serif;
   width: 100%;
-  margin-bottom: 1rem;
   border-radius: 0 0 85% 85% / 30%; }
 
 .encabezado__aling {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   .encabezado__aling .encabezado__img {
-    width: 60px; }
+    width: 80px; }
   .encabezado__aling .encabezado__titulo {
     display: inline;
     color: #A8DBA8;
@@ -67,13 +67,14 @@ table {
   .encabezado__aling .encabezado__nav {
     max-width: 100%;
     overflow: hidden;
-    padding: 4px;
-    margin: 10px 0px 0px 25px; }
+    padding: 4px; }
     .encabezado__aling .encabezado__nav .encabezado__navegador {
       color: #A8DBA8 !important;
       background-color: transparent;
-      padding: 10px;
-      width: 100%; }
+      padding: 10px; }
+      .encabezado__aling .encabezado__nav .encabezado__navegador .menu_align_end {
+        display: flex;
+        align-items: end; }
       .encabezado__aling .encabezado__nav .encabezado__navegador .nav__links:hover {
         border-radius: 2px;
         transition-property: background-color, color;
@@ -88,322 +89,446 @@ table {
         font-weight: 500; }
       .encabezado__aling .encabezado__nav .encabezado__navegador .nav__links {
         padding: 20px !important;
-        color: #A8DBA8 !important;
+        color: aliceblue !important;
         font-weight: 500 !important; }
 
 .footer {
   background-color: #051e2c;
   height: 10vh;
-  width: 100%;
   display: flex;
   justify-content: flex-end; }
-  .footer .btn--facebook {
-    border: 4px #fafafa;
-    height: 55px;
-    width: 60px;
-    padding: 10px; }
-  .footer .btn--instagram {
-    border: 4px #fefefe;
-    height: 55px;
-    width: 60px;
-    padding: 10px; }
-  .footer .btn--twitter {
-    border: 4px #fdfdfd;
-    height: 55px;
-    width: 60px;
-    padding: 10px; }
+
+.link_red {
+  margin: 8px; }
+
+.redsocial {
+  min-width: 40px; }
 
 .carouselYformulario {
   display: grid;
-  gap: 100rem;
+  gap: 85rem;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   font-family: "Cabin", sans-serif;
   font-size: 22px;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 10px;
-  border-radius: 5px 5px; }
-  .carouselYformulario .carousel__img {
-    height: 680px;
-    width: 100%;
-    position: relative;
-    padding: 0 rem;
-    margin: 0px; }
-    .carouselYformulario .carousel__img .carousel_text {
-      color: #A8DBA8 !important;
-      font-size: 40px !important;
-      font-weight: 500 !important; }
+  padding: 0px;
+  margin: 0; }
+
+#carousel_img1 {
+  background-image: url("../img/img-hero1.webp"); }
+
+#carousel_img2 {
+  background-image: url("../img/img-hero2.webp"); }
+
+#carousel_img3 {
+  background-image: url("../img/img-hero3.webp"); }
+
+.carousel_img {
+  background-color: #000;
+  height: 82vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.carousel_text {
+  color: #A8DBA8 !important;
+  font-size: 40px !important;
+  font-weight: 500 !important;
+  margin: auto !important; }
 
 .enlaceUno {
   align-items: center;
-  margin: 5px;
   padding: 12px;
   justify-content: center;
   padding-top: 10px;
   width: 100%;
   color: #A8DBA8; }
   .enlaceUno .enlaceUno_titulo {
-    color: #A8DBA8;
+    color: aliceblue;
     font-size: 43px;
-    font-weight: 500;
-    padding: 10px 12px 20px 10px;
+    font-weight: 800;
+    padding: 40px 0px 20px 0px;
     text-align: center; }
   .enlaceUno .enlaceUno_flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap; }
-  .enlaceUno .enlaceUno_parrafo {
-    color: aliceblue;
-    font-size: 22px;
+    text-align: center;
+    width: 100%; }
+  .enlaceUno .enlaceUno__parrafo {
+    color: white;
+    font-size: 30px;
     font-weight: 500;
     padding: 28px;
     text-align: center; }
-  .enlaceUno .enlaceUno_img {
-    margin: 10px;
-    display: block;
-    width: 10rem; }
+
+.enlaceUno_img {
+  display: inline;
+  width: 30%; }
 
 .ubicacion {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
-  font-family: "Cabin", sans-serif;
-  background-color: #A8DBA8;
-  padding: 10px; }
-  .ubicacion .ubicacion__uno {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    z-index: 5; }
-    .ubicacion .ubicacion__uno .ubicacion_titulo {
-      margin: 10px;
-      font-size: 50px;
-      font-family: "Cabin", sans-serif;
-      text-align: center;
-      color: aliceblue; }
-  .ubicacion .ubicacion_parrafo {
-    color: aliceblue;
-    background-color: #0B486B;
-    font-size: 20px !important;
-    font-family: "Cabin", sans-serif;
-    font-weight: 400;
-    text-shadow: 0 0 3px #051e2c, 0 0 5px #3B8686;
-    position: relative;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 4px;
-    text-align: center; }
-  .ubicacion .ubicacion__dos {
-    padding: 8px;
-    align-content: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    .ubicacion .ubicacion__dos .ancla_contacto {
-      color: #A8DBA8 !important;
-      font-size: 28px !important;
-      background-color: aliceblue;
-      text-decoration: none !important;
-      margin: 10px;
-      text-shadow: 0 0 3px #051e2c, 0 0 5px #3B8686;
-      font-family: "Cabin", sans-serif;
-      text-align: center; }
-    .ubicacion .ubicacion__dos .ancla_contacto:hover {
-      color: #051e2c;
-      background-color: #3B8686; }
-    .ubicacion .ubicacion__dos .social__img {
-      position: fixed;
-      top: 10px;
-      right: 20px;
-      width: 80px;
-      z-index: 1; }
-
-.contacto {
-  background-color: #A8DBA8;
-  color: #051e2c;
-  font-family: 'Cabin', sans-serif;
-  padding: 8px;
-  width: 100%; }
-
-.contacto_titulo {
-  color: #0B486B;
-  font-size: 20px;
-  padding: 8px;
-  margin-left: 10px;
-  background-color: cadetblue;
-  width: 50%;
-  border-radius: 4px; }
-
-.contacto_form {
-  padding: 15px; }
-
-.intro_evento {
-  align-items: center;
-  color: aliceblue;
+  background-color: aliceblue;
   display: flex;
   font-family: "Cabin", sans-serif;
-  font-size: 40px; }
-  .intro_evento .intro_cajauno {
-    border-radius: 10px;
-    background-image: url("../img/patio-lleno.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    height: 85vh; }
-  .intro_evento .intro_titulo {
-    color: black;
-    background-color: rgba(224, 248, 0, 0.2);
-    font-size: 80px;
-    text-align: center;
-    padding: 5px; }
-  .intro_evento .intro_text {
-    background-color: rgba(225, 179, 64, 0.2);
-    font-size: 30px;
-    color: black;
-    font-weight: 600;
-    margin-top: 5rem;
-    padding: 10px; }
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; }
 
-.eventos__img {
-  width: 240px; }
-
-.titulo__eventos {
-  margin: 3px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  font-size: 22px;
+.ubicacion_titulo {
+  margin: 10px;
+  font-size: 50px;
   font-family: "Cabin", sans-serif;
+  text-align: center;
   color: #051e2c; }
 
-.eventos__parrafo {
-  padding: 10px;
-  font-family: "Cabin", sans-serif;
-  font-size: 20px;
+.ubicacion_parrafo {
   color: aliceblue;
-  font-weight: 500; }
+  background-color: #0B486B;
+  font-size: 20px !important;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  text-shadow: 0 0 3px #051e2c, 0 0 5px #3B8686;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  width: 100%; }
 
-.eventos__section {
-  background-color: #A8DBA8;
-  background-image: url("../img/icono-b.jpg");
-  background-repeat: no-repeat;
-  background-position: center center; }
-  .eventos__section .eventos {
-    height: 140vh; }
-    .eventos__section .eventos .eventos__flip {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-      height: 45vh; }
-    .eventos__section .eventos .flip-box {
-      background-color: transparent;
-      width: 50%;
-      height: 100%;
-      perspective: 1000px; }
-    .eventos__section .eventos .flip-box-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.8s;
-      transform-style: preserve-3d; }
-    .eventos__section .eventos .flip-box:hover .flip-box-inner {
-      transform: rotateY(180deg); }
-    .eventos__section .eventos .flip-box-front, .eventos__section .eventos .flip-box-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden; }
-    .eventos__section .eventos .flip-box-front {
-      color: #051e2c; }
-    .eventos__section .eventos .flip-box-back {
-      background-image: linear-gradient(#3B8686, #A8DBA8);
-      transform: rotateY(180deg); }
-    .eventos__section .eventos .boton__reserva {
-      font-family: "Cabin", sans-serif !important;
-      position: relative !important;
-      left: 26rem !important; }
+.ubicacion_iframe {
+  height: 50vh; }
 
-.reservas {
+.boton_index {
+  color: aliceblue;
+  font-weight: 500;
+  margin: 15px;
+  border: 0;
+  font-size: "Cabin", sans-serif;
+  background-color: #3B8686;
+  padding: 10px;
+  text-transform: uppercase; }
+
+.contacto-intro {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  min-height: 85vh;
+  width: 100%; }
+
+.contacto_text {
+  color: #051e2c; }
+
+.contacto_titulo {
+  color: #051e2c;
+  font-family: 'Cabin', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 2rem; }
+
+.contacto_parrafo {
+  color: #0B486B;
+  font-family: 'Cabin', sans-serif;
+  font-size: 32px;
+  margin-top: 50px;
+  padding: 2rem;
+  line-height: initial;
+  text-align: center; }
+
+.contacto {
+  width: 100%;
+  font-family: "Cabin", sans-serif; }
+
+.contacto_titulo2 {
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 20px 0px 20px 0px;
+  text-align: center; }
+
+.contacto_align {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; }
-  .reservas .reservas__bloqueuno .reservas__titulo {
-    display: inline-block;
-    text-align: center;
-    color: #A8DBA8;
-    font-size: 60px;
-    font-family: "Cabin", sans-serif;
-    font-weight: 700;
-    padding: 10px;
-    margin: 5px; }
-    .reservas .reservas__bloqueuno .reservas__titulo .reservas__img {
-      position: relative;
-      max-width: 100%;
-      padding: 16px;
-      z-index: 1; }
-      .reservas .reservas__bloqueuno .reservas__titulo .reservas__img .reservas__lottie {
-        position: absolute;
-        z-index: 8;
-        width: 300px; }
-  .reservas .reservas__bloquedos {
-    display: flex;
-    color: #A8DBA8;
-    border-bottom: #051e2c;
-    flex-direction: column;
-    align-items: left;
-    font-weight: 700;
-    font-family: "Cabin", sans-serif;
-    padding: 10px;
-    width: 100%; }
+  align-items: center; }
+
+.contacto_form {
+  color: aliceblue;
+  font-size: 18px;
+  margin: 10px;
+  width: 80%; }
+
+.contacto_botones {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center; }
+
+.contacto_enviar {
+  border: 0;
+  margin: 1rem;
+  background-color: #3B8686;
+  color: black;
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  width: 50%;
+  min-height: 2rem;
+  text-transform: uppercase; }
+
+.contacto_enviar:hover {
+  background-color: white;
+  color: #051e2c; }
+
+.contacto_borrar {
+  border: 0;
+  margin: 1rem;
+  background-color: darkgray;
+  color: black;
+  font-size: 15px;
+  width: 50%;
+  min-height: 1.7rem; }
+
+.contacto_borrar:hover {
+  background-color: #A8DBA8;
+  color: #3B8686; }
+
+.eventos-intro {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  min-height: 85vh;
+  width: 100%;
+  background-image: url("../img/fondo-hero-eventos.webp"); }
+
+.eventos_text {
+  color: #051e2c;
+  border-radius: 8px; }
+
+.eventos__titulo {
+  color: aliceblue;
+  font-family: 'Cabin', sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center; }
+
+.eventos__parrafo {
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 32px;
+  margin-top: 50px;
+  padding: 2rem;
+  line-height: initial;
+  text-align: center;
+  text-shadow: 5px 5px 5px #000; }
+
+.eventos_iconos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  background-color: aliceblue;
+  justify-content: space-around;
+  margin-top: auto;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+  overflow: hidden;
+  min-height: 85vh; }
+
+.eventos_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 0.4rem;
+  width: 40%; }
+
+.eventos_icon1 {
+  color: #051e2c;
+  margin-bottom: 1rem;
+  width: 3rem; }
+
+.eventos_parrafo1 {
+  color: black;
+  font-size: 1.6rem; }
+
+.ancho_boton {
+  width: 70%;
+  padding: 1rem; }
+
+.ir_reservas {
+  color: aliceblue;
+  font-size: 1rem;
+  background-color: #051e2c;
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  min-height: 4rem;
+  padding: 1rem; }
+
+.ir_reservas:hover {
+  color: #051e2c;
+  background-color: aliceblue;
+  font-weight: 700; }
+
+.reservas {
+  background-color: aliceblue;
+  width: 100%;
+  text-align: center;
+  min-height: 85vh; }
+
+.reservas_bloque {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 86vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.reservas_bloque1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; }
+
+.reservas_titulo {
+  color: #051e2c;
+  font-family: 'Cabin', sans-serif;
+  font-size: 70px;
+  text-align: center; }
+
+.reservas_parrafo {
+  color: #0B486B;
+  font-family: 'Cabin', sans-serif;
+  font-size: 32px;
+  margin-top: 50px;
+  padding: 2rem;
+  line-height: initial;
+  text-align: center; }
+
+.reservas__form {
+  background-image: url(../img/casabella.jpg);
+  background-size: cover;
+  display: flex;
+  color: #0B486B;
+  text-shadow: 3px 3px 10px white;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  min-height: 85vh; }
+
+.reservas_inputs {
+  align-items: center;
+  border: 0;
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin: 0.7rem;
+  padding: 0.2rem;
+  width: 55%; }
+
+.reservas_buttom {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.4rem;
+  border: 0;
+  margin: 1rem;
+  background-color: #3B8686;
+  text-align: center;
+  height: 3rem;
+  width: 45%; }
+
+.reservas_buttom:hover {
+  background-color: white;
+  color: #051e2c;
+  font-weight: 700; }
+
+.reservas_buttom1 {
+  width: 50%;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.4rem;
+  border: 0;
+  margin: 1rem;
+  background-color: #051e2c;
+  color: white;
+  text-align: center;
+  height: 3rem;
+  width: 45%; }
 
 .nosotros-intro {
-  background-color: #051e2c;
-  background-repeat: no-repeat;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
   min-height: 85vh;
   width: 100%; }
 
 .nosotros__text {
+  color: #051e2c;
   display: flex;
   flex-direction: row;
-  background-color: #0B486B;
   border-radius: 8px; }
 
 .nosotros__titulo {
-  color: #A8DBA8;
+  color: #051e2c;
   font-family: 'Cabin', sans-serif;
-  font-size: 70px; }
+  font-size: 70px;
+  text-align: center; }
 
 .nosotros__parrafo {
-  color: #A8DBA8;
+  color: #0B486B;
   font-family: 'Cabin', sans-serif;
-  font-size: 45px; }
-
-.nosotros__img {
-  width: 480px; }
+  font-size: 32px;
+  margin-top: 50px;
+  padding: 12px;
+  line-height: initial;
+  text-align: center; }
 
 .nosotros {
-  background-image: -webkit-linear-gradient(#0B486B, #79BD9A);
+  background-color: #000000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px; }
+  padding: 1rem; }
 
 .nosotros__card {
   font-family: 'Cabin', sans-serif;
-  background-color: transparent;
-  color: aliceblue;
-  font-size: 22px;
-  font-weight: 700; }
+  background-color: white;
+  color: #051e2c;
+  margin: 1%;
+  font-size: 18px;
+  width: 23%; }
+
+.card {
+  border-radius: 0; }
+
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600; }
+
+.boton_link {
+  background-color: black;
+  padding: 8px;
+  border-radius: 0;
+  text-align: center; }
+
+.card_centrado {
+  text-align: center; }
 
 .card-link {
-  color: #051e2c;
-  text-decoration: none; }
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 100%; }
 
-.card-link:hover {
-  color: black;
-  font-size: 24px; }
+.card-img-top {
+  border-radius: 0; }
 
 .error {
   display: flex;
@@ -429,43 +554,45 @@ table {
   font-size: 25px;
   padding: 10px; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  background-image: linear-gradient(#051e2c, aliceblue); }
+  background-image: linear-gradient(#051e2c, #041524); }
 
 /* Mediqueries  */
-@media only screen and (min-width: 375px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .encabezado__nav {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    max-width: 50%; }
-    .encabezado__nav .encabezado__img {
-      width: 50px; }
-  .carouselYformulario {
-    display: flex;
-    align-items: center;
-    width: 100%; }
-    .carouselYformulario .carousel__img {
-      height: 380px;
-      max-width: 100%; }
+    max-width: 50%;
+    justify-content: flex-end; }
   .intro_evento {
     flex-direction: column;
-    justify-content: center; } }
+    justify-content: center; }
+  .reservas__form {
+    width: 100%; }
+  .reservas__img {
+    width: 100%; }
+  .enlaceUno_img {
+    width: 45%; }
+  .nosotros {
+    flex-direction: column;
+    padding: 0.3rem;
+    align-items: center; } }
 
 @media only screen and (max-width: 375px) {
   .encabezado__nav {
     display: flex;
     align-items: flex-start;
     margin: 0px; }
-  .encabezado__img {
-    width: 40px; }
   .carousel {
     max-height: 80vh; }
     .carousel .carousel__img {
       height: 280px;
       max-width: 370px; }
-  .enlaceUno_img {
-    width: 60%; }
   legend {
     color: #A8DBA8;
     font-weight: 700;
@@ -473,4 +600,10 @@ body {
   .eventos__section {
     min-height: 180vh; }
   .eventos__flip {
-    height: 120vh; } }
+    height: 120vh; }
+  .enlaceUno_img {
+    width: 100%; }
+  .nosotros__titulo {
+    font-size: 55px; }
+  .reservas_inputs {
+    width: 80%; } }

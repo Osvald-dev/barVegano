@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="Stylesheet" href="../css/style.css">
+    <meta name="autor" content="Casabella Osvaldo">
+    <meta name="description" content="Reserva tu Mesa en este lugar exclusivo:Hamburguesas Veganas para deleitarte de sabores naturales. Disfuta de las especialidades de la Casa! (veggyVeg,Blackpan) CASABELLA barVegano">
+    <meta name="keywords" content="hamburguesas veganas, veg, hamburguesas vegetarianas, bar vegano, comida libre de carne, casa vegetariana , freemeat">
+    <title>CasaBella || Reservas ||</title>
+    
+</head>
+
+<body>
+  <header class="encabezado container-fluid"> 
+    <div class="encabezado__aling">
+      <div  class="col">
+        <a href="../index.html"> <img class="encabezado__img" src="../img/casabella-logo.svg" alt="iconoHamburguesa"></a>
+      </div>        
+      <div class="encabezado__nav menu_align_end">        
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <div class="encabezado__navegador">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navegador__fondo collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav__links nav-link" href="./eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav__links nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav__links nav-link" href="./reservas.html">Reservas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav__links nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         </nav>
+       </div>          
+     </div> 
+</header>
+<section class="reservas">
+  <div class="reservas_bloque">
+    <h2 class="reservas_titulo">Reservas</h2>
+    <p class="reservas_parrafo">Confirmada la reserva te enviaremos un código QR único a tu casilla de email. El día que nos visites comparte este código con tus invitados asi ingresan automáticamente </p> 
+  </div>
+  <div class="reservas_bloque1" >
+    <form class="reservas__form">
+        <div class="reservas_inputs">
+        <label for="nombre" name="nombre">Nombre <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+        <input type="text" name="nombre" id="nombrereserva" size="20">
+        </div>
+        <div class="reservas_inputs" >
+        <label for="mail" name="mail">Correo electrónico<span class="form-required" title="Este campo es obligatorio.">*</span></label>
+        <input type="email" name="mail" id="email">
+      </div>
+      <div class="reservas_inputs">
+        <label for="telefono" name="telefono">Teléfono<span class="form-required" title="Este campo es obligatorio.">*</span></label>
+        <input type="tel" id="phone" name="telefono" minlength="9">
+      </div>
+      <div class="reservas_inputs"> 
+        <label for="personas" name="personas">Cantidad de Personas<span class="form-required" title="Este campo es obligatorio.">*</span></label>
+        <input type="number" id="personas" name="personas"min="2" max="20">
+      </div>
+      <div class="reservas_inputs">
+        <label for="fecha" name="fecha">Fecha de reserva</label>
+        <input type="date" name="fecha" id="fecha">
+      </div>
+    </form>
+    <button  class="reservas_buttom" name="reserva" type="submit">Reservar</button>
+    <button class="reservas_buttom1" name="volver" onclick="window.location.href='../index.html';">Volver al Menú</button>
+   </form>
+</div>
+  
+ 
+
+</section>
+
+   
+
+<footer class="footer container-fluid">
+  <a class="link_red" href="https://wwww.facebook.com">
+  <img class="redsocial" src="../img/facebook-logo.svg" alt="iconoFacebook"></a>
+  <a class="link_red" href="https://www.twitter.com">
+  <img class="redsocial" src="../img/twitter-logo.svg" alt="iconoTweeter"></a>
+  <a class="link_red" href="htttps://www.instagram.com">
+  <img class="redsocial" src="../img/instagram-logo.svg" alt="iconoInstagram"></a>
+</footer>
+  
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
+</body>
+</html>

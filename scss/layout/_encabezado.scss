@@ -2,19 +2,20 @@
 
 .encabezado{ 
     
-    background-image: linear-gradient( 135deg, $color-oscuro 10%, $color-base 100%);
+    background-color: $color-oscuro;
     font-family: $fuente;
     width: 100%;
-    margin-bottom: 1rem;
     border-radius: 0 0 85% 85% / 30%;
+    
     
 }
     .encabezado__aling{
         display: flex;
         justify-content: space-between;
-        
+        align-items: center;
     .encabezado__img{
-            width: 60px;
+           
+            width: 80px;
         }
     
     
@@ -30,14 +31,17 @@
     max-width: 100%;
     overflow: hidden;
     padding:4px; 
-    margin: 10px 0px 0px 25px;
+   
 
     .encabezado__navegador{
         color: $color-claro !important;
         background-color: transparent;
         padding: 10px;
-        width: 100%;
-        
+
+    .menu_align_end{
+        display: flex;
+        align-items: end;
+    }    
         
     .nav__links:hover{
         border-radius: 2px;
@@ -57,7 +61,7 @@
             
             
             padding: 20px !important;
-            color: $color-claro !important;
+            color: aliceblue !important;
             font-weight: 500 !important;
 
         }

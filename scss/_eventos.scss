@@ -1,130 +1,90 @@
 @import "./utilities/variables";
-
-.intro_evento{
-  align-items: center;
-  color: aliceblue;
-  display: flex;
-  font-family: $fuente;
-  font-size: $tamaño-fuente;
-    
-      .intro_cajauno{
-        border-radius: 10px;
-        background-image: url("../img/patio-lleno.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        height: 85vh;
-      }
-      .intro_titulo{
-        color: black;
-        background-color:rgba(224, 248, 0, 0.2); ;
-        font-size: 80px;
-        text-align: center;
-        padding: 5px;
-      }
-      .intro_text{
-        background-color: rgba(225, 179, 64, 0.2);
-        font-size: 30px ;
-        color: black; 
-       font-weight: 600;
-        margin-top: 5rem;
-        padding: 10px;
-       
-      }
-         }    
-   
-
-  .eventos__img{
-      
-      width: 240px;
-  }
-  .titulo__eventos{
-      margin:3px;
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-      font-size: 22px;
-      font-family: $fuente;
-      color: $color-oscuro;
-  }
-  .eventos__parrafo{
-      
-      padding:10px;
-      font-family: $fuente;
-      font-size: 20px;
-      color: aliceblue;
-      font-weight: 500;
-    
+.eventos-intro{
+	background-color: aliceblue;
+	display: flex;
+	align-items: center;
+	min-height: 85vh;
+	width: 100%;
+    background-image: url("../img/fondo-hero-eventos.webp");
 }
-
-.eventos__section{
-      background-color: $color-claro;
-      background-image: url("../img/icono-b.jpg");
-      background-repeat: no-repeat;
-      background-position:center center;
-
-.eventos{
-    
-  height: 140vh;
-
+ .eventos_text{
+	 color: #051e2c;
+	 border-radius: 8px;
+	
+ }
+		.eventos__titulo{
+			color: aliceblue;
+			font-family:'Cabin', sans-serif  ;
+			font-size: 70px;
+			font-weight: 600;
+			text-align: center;
+           
+		}
+		.eventos__parrafo{
+			color: white;
+			font-family:'Cabin', sans-serif  ;
+			font-size: 32px;
+			margin-top: 50px;
+			padding: 2rem;
+			line-height: initial;
+			text-align: center;
+      		text-shadow: 5px 5px 5px #000;
+		}
  
-      .eventos__flip{
-          display: flex;
-          justify-content: center;
-          padding: 20px;
-          height: 45vh;
+  .eventos_iconos{
+	  		display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+			margin:0;
+			background-color: aliceblue;
+			justify-content: space-around;
+			margin-top: auto;
+			font-family: $fuente;
+			text-align: center;
+			overflow: hidden;
+			min-height: 85vh;
+  }
+  .eventos_1{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  margin: 1rem;
+	  padding:0.4rem;
+	  width: 40%;
+  }
+       .eventos_icon1{
+		   color: #051e2c;
+		   margin-bottom: 1rem;
+		   width: 3rem;
+	   }
+	   .eventos_parrafo1{
+		   color: black;
+			font-size: 1.6rem;
 
-        }
-        .flip-box {
-            background-color: transparent;
-            width: 50%;
-            height: 100%;
-            perspective: 1000px; 
-          }
-          
-
-          .flip-box-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-          }
-          
-          
-          .flip-box:hover .flip-box-inner {
-            transform: rotateY(180deg);
-          }
-          
-        
-          .flip-box-front, .flip-box-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden; 
-            backface-visibility: hidden;
-          }
-          
-        
-          .flip-box-front {
-          color: $color-oscuro;
-          
-          }
-          
-
-          .flip-box-back {
-            background-image: linear-gradient($color-foot, $color-claro);
-            
-            transform: rotateY(180deg);
-          }
-         
-         
-          .boton__reserva{
-            font-family: $fuente !important;
-            position: relative !important;
-            left: 26rem !important;
-          }
-        }
-       
-
-
-      }
+	   }
+	   .ancho_boton{
+		   width: 70%;
+	       padding: 1rem;
+	   }
+.ir_reservas{
+	color: aliceblue;
+	font-size: 1rem;
+	background-color: #051e2c;
+	margin: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	border: 0;
+	min-height: 4rem;
+	padding: 1rem;
+	
+}
+.ir_reservas:hover{
+	color: $color-oscuro;
+	background-color: aliceblue;
+	font-weight: 700;
+	
+	
+}
+     

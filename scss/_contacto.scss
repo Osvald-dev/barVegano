@@ -1,23 +1,93 @@
+.contacto-intro{
+background-color: aliceblue;
+display: flex;
+align-items: center;
+min-height: 85vh;
+width: 100%;
+
+}
+.contacto_text{
+color: #051e2c;
+
+
+}
+.contacto_titulo{
+color: #051e2c;
+font-family:'Cabin', sans-serif  ;
+font-size: 70px;
+text-align: center;
+margin-top: 1rem;
+padding: 2rem;;
+}
+.contacto_parrafo{
+color: #0B486B;
+font-family:'Cabin', sans-serif  ;
+font-size: 32px;
+margin-top: 50px;
+padding: 2rem;
+line-height: initial;
+text-align: center;
+}
+
 .contacto{
-	background-color: #A8DBA8;
-	color: #051e2c;
-	font-family:'Cabin', sans-serif  ;
-	padding: 8px;
-	width: 100%;
+
+width: 100%;
+font-family: $fuente;
+}
+.contacto_titulo2{
+color: aliceblue;
+font-weight: 600;
+font-size: 32px;
+margin: 20px 0px 20px 0px;
+text-align: center;
+}
+.contacto_align{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.contacto_form{
+color: aliceblue;
+font-size: 18px;
+margin: 10px;
+width: 80%;
+
+}
+
+.contacto_botones{
+	display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto_enviar{
+	border: 0;
+	margin: 1rem;
+    background-color: $color-foot;
+    color: black;
+    font-family: "Cabin", sans-serif;
+    font-size: 20px;
+    width: 50%;
+    min-height: 2rem;
+	text-transform: uppercase;
 	
 }
-	.contacto_titulo{
-		color: $color-base;
-		font-size: 20px;
-		padding: 8px;
-		margin-left: 10px;
-		background-color: cadetblue;
-		width: 50%;
-		border-radius: 4px;
-	}
-	.contacto_form{
 
-		padding: 15px;
-	
-	}
+.contacto_enviar:hover{
+	background-color: white;
+	color: #051e2c;
 
+}
+.contacto_borrar{
+	border: 0;
+	margin:1rem;
+	background-color: darkgray;
+	color: black;
+	font-size: 15px;
+	width:50%;
+	min-height: 1.7rem;
+}
+.contacto_borrar:hover{
+	background-color: $color-claro;
+	color: $color-foot;
+}
