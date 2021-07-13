@@ -221,15 +221,14 @@ table {
   font-family: 'Cabin', sans-serif;
   font-size: 70px;
   text-align: center;
-  margin-top: 1rem;
-  padding: 2rem; }
+  margin-top: 1rem; }
 
 .contacto_parrafo {
   color: #0B486B;
   font-family: 'Cabin', sans-serif;
   font-size: 32px;
   margin-top: 50px;
-  padding: 2rem;
+  padding: 1rem;
   line-height: initial;
   text-align: center; }
 
@@ -387,11 +386,9 @@ table {
   justify-content: center; }
 
 .reservas_bloque1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%; }
+  overflow: hidden;
+  width: 100%;
+  align-items: center; }
 
 .reservas_titulo {
   color: #051e2c;
@@ -404,15 +401,15 @@ table {
   font-family: 'Cabin', sans-serif;
   font-size: 32px;
   margin-top: 50px;
-  padding: 2rem;
   line-height: initial;
-  text-align: center; }
+  text-align: center;
+  padding: 1rem; }
 
 .reservas__form {
   background-image: url(../img/casabella.jpg);
   background-size: cover;
   display: flex;
-  color: #0B486B;
+  color: black;
   text-shadow: 3px 3px 10px white;
   text-align: center;
   font-family: "Cabin", sans-serif;
@@ -428,6 +425,7 @@ table {
   font-weight: 600;
   flex-direction: column;
   font-size: 1.5rem;
+  justify-content: center;
   margin: 0.7rem;
   padding: 0.2rem;
   width: 55%; }
@@ -488,7 +486,6 @@ table {
   text-align: center; }
 
 .nosotros {
-  background-color: #000000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -579,9 +576,10 @@ body {
   .enlaceUno_img {
     width: 45%; }
   .nosotros {
-    flex-direction: column;
     padding: 0.3rem;
-    align-items: center; } }
+    align-items: center; }
+  .nosotros__card {
+    width: 35%; } }
 
 @media only screen and (max-width: 375px) {
   .encabezado__nav {
@@ -604,6 +602,17 @@ body {
   .enlaceUno_img {
     width: 100%; }
   .nosotros__titulo {
+    font-size: 55px;
+    margin-top: 1rem; }
+  .nosotros__card {
+    width: 85%; }
+  .eventos__titulo {
+    margin-top: 1rem;
     font-size: 55px; }
+  .reservas_titulo {
+    font-size: 55px;
+    margin-top: 1rem; }
   .reservas_inputs {
-    width: 80%; } }
+    width: 80%; }
+  .reservas_parrafo {
+    padding: 0.5rem; } }

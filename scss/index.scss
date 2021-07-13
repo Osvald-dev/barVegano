@@ -49,9 +49,11 @@ body{
 	width: 45%;
 }
 .nosotros{
-	flex-direction: column;
-    padding: 0.3rem;
+	padding: 0.3rem;
 	align-items: center;
+}
+.nosotros__card{
+	width: 35%;
 }
 
 }
@@ -90,8 +92,24 @@ legend{
 }
 .nosotros__titulo{
 	font-size: 55px;
+	margin-top: 1rem;
+}
+.nosotros__card{
+	width: 85%;
+}
+.eventos__titulo{
+	margin-top: 1rem;
+	font-size: 55px;
+}
+.reservas_titulo{
+	font-size: 55px;
+	margin-top: 1rem;
 }
 .reservas_inputs{
 	width: 80%;
 }
+.reservas_parrafo{
+	padding: 0.5rem;
+}
+
 }
