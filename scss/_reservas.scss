@@ -18,7 +18,6 @@
 }
 .reservas_bloque1{
     overflow: hidden;
-   
     width: 100%;
     align-items: center;
 
@@ -68,7 +67,6 @@
     margin: 0.7rem;
 	padding: 0.2rem;
     width: 80%;
-       
 }
 .reservas_div{
 	display: flex;
@@ -104,8 +102,8 @@
 	font-family: $fuente;
 	font-size: 1.4rem;
 	border: 0;
-	background-color:$color-oscuro;
-	color: white;
+	background-color:$color-claro;
+	color: black;
 	text-align: center;
 	height: 3rem;
 	width: 50%;
