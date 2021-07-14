@@ -680,7 +680,10 @@ body {
   .reservas_buttom1 {
     width: 100%; }
   .nosotros__card {
-    width: 80%; } }
+    width: 80%; }
+  .contacto_div {
+    font-size: 1.2rem;
+    width: 100%; } }
 
 @media only screen and (max-width: 375px) {
   .encabezado__nav {
@@ -717,9 +720,6 @@ body {
     padding: 0.5rem; }
   .contacto_input {
     flex-direction: column; }
-  .contacto_div {
-    font-size: 1.2rem;
-    width: 100%; }
   .reservas_input {
     flex-direction: column; }
   .reservas_div {

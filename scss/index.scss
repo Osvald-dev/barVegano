@@ -16,7 +16,6 @@
 	margin: 0;
 	padding: 0;
 }
-	 
 body{
 	background-image: linear-gradient(#051e2c, rgb(4, 21, 36));
 }
@@ -27,7 +26,7 @@ body{
     animation-fill-mode: forwards;
     opacity: 0;
 }
-  
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -36,11 +35,11 @@ body{
     100% {
         opacity: 1;
         transform: translateY(0px);
-     }
+}
 }
 
 .animacion-entrada-delay{
-  animation-delay: 0.3s
+	animation-delay: 0.3s
 }
 
 
@@ -96,6 +95,10 @@ body{
 	}
 	.nosotros__card{
 		width: 80%;
+	}
+	.contacto_div{
+		font-size: 1.2rem;
+		width: 100%;
 	}
 }
 
@@ -153,10 +156,7 @@ legend{
 .contacto_input{
 	flex-direction: column;
 }
-.contacto_div{
-	font-size: 1.2rem;
-	width: 100%;
-}
+
 
 .reservas_input{
 	flex-direction: column;
