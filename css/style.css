@@ -224,6 +224,7 @@ table {
   background-repeat: repeat;
   background-attachment: fixed;
   display: flex;
+  justify-content: center;
   align-items: center;
   min-height: 85vh;
   width: 100%; }
