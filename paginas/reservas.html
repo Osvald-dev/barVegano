@@ -52,34 +52,48 @@
 </header>
 <section class="reservas">
   <div class="reservas_bloque">
-    <h2 class="reservas_titulo">Reservas</h2>
-    <p class="reservas_parrafo">Confirmando tu reserva te enviaremos un código QR único a tu casilla de email. El día que nos visites comparte este código con tus invitados asi ingresan automáticamente </p> 
+    <h2 class="reservas_titulo animacion-entrada">Reservas</h2>
+    <p class="reservas_parrafo animacion-entrada animacion-entrada-delay">Confirmando tu reserva te enviaremos un código QR único a tu casilla de email. El día que nos visites comparte este código con tus invitados asi ingresan automáticamente </p> 
   </div>
   <div class="reservas_bloque1" >
     <form class="reservas__form">
         <div class="reservas_inputs">
-        <label for="nombre" name="nombre">Nombre <span class="form-required" title="Este campo es obligatorio.">*</span></label>
-        <input type="text" name="nombre" id="nombrereserva" size="20">
+          <div class="reservas_div">
+            <label for="nombre" name="nombre">Nombre <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+            <input type="text" name="nombre" id="nombrereserva" size="20">
+          </div>
+          <div class="reservas_div">
+            <label for="apellido" name="apellido">Apellido<span class="form-required" title="Este campo es obligatorio.">*</span></label>
+            <input type="text" name="apellido" id="nombrereserva" size="20">
+          </div>
         </div>
         <div class="reservas_inputs" >
-        <label for="mail" name="mail">Correo electrónico<span class="form-required" title="Este campo es obligatorio.">*</span></label>
-        <input type="email" name="mail" id="email">
-      </div>
-      <div class="reservas_inputs">
-        <label for="telefono" name="telefono">Teléfono<span class="form-required" title="Este campo es obligatorio.">*</span></label>
-        <input type="tel" id="phone" name="telefono" minlength="9">
-      </div>
+          <div class="reservas_div">
+            <label for="mail" name="mail">Correo electrónico<span class="form-required" title="Este campo es obligatorio.">*</span></label>
+            <input type="email" name="mail" id="email">
+          </div>
+          <div class="reservas_div">
+            <label for="telefono" name="telefono">Teléfono<span class="form-required" title="Este campo es obligatorio.">*</span></label>
+            <input type="tel" id="phone" name="telefono" minlength="9">
+          </div>
+        </div>
       <div class="reservas_inputs"> 
-        <label for="personas" name="personas">Cantidad de Personas<span class="form-required" title="Este campo es obligatorio.">*</span></label>
-        <input type="number" id="personas" name="personas"min="2" max="20">
+        <div class="reservas_div">
+          <label for="personas" name="personas">Cantidad de Personas<span class="form-required" title="Este campo es obligatorio.">*</span></label>
+          <input type="number" id="personas" name="personas"min="2" max="20">
+        </div>
+        <div class="reservas_div">
+          <label for="fecha" name="fecha">Fecha de reserva</label>
+          <input type="date" name="fecha" id="fecha">
+        </div>
       </div>
       <div class="reservas_inputs">
-        <label for="fecha" name="fecha">Fecha de reserva</label>
-        <input type="date" name="fecha" id="fecha">
+          <input type="button" class="reservas_buttom" name="volver" onclick="window.location.href='../index.html';" value="Volver al Menú">
+          <input type="button"  class="reservas_buttom1" name="reserva" type="submit" value="Reservar">
       </div>
     </form>
-    <button  class="reservas_buttom" name="reserva" type="submit">Reservar</button>
-    <button class="reservas_buttom1" name="volver" onclick="window.location.href='../index.html';">Volver al Menú</button>
+   
+    
    </form>
 </div>
   

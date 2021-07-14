@@ -1,25 +1,29 @@
 .contacto-intro{
 background-color: aliceblue;
+background-image: url(../img/contacto-hero.webp);
+background-size: cover;
+background-position: center;
+background-repeat: repeat;
+background-attachment: fixed;
 display: flex;
 align-items: center;
 min-height: 85vh;
 width: 100%;
 
 }
-.contacto_text{
-color: #051e2c;
 
-
-}
 .contacto_titulo{
-color: #051e2c;
+
+color: white;
+text-shadow: 2px 2px 5px black;
 font-family:'Cabin', sans-serif  ;
 font-size: 70px;
 text-align: center;
 margin-top: 1rem;
 }
 .contacto_parrafo{
-color: #0B486B;
+color:aliceblue;
+text-shadow: 2px 2px 5px black;
 font-family:'Cabin', sans-serif  ;
 font-size: 32px;
 margin-top: 50px;
@@ -30,7 +34,6 @@ text-align: center;
 
 .contacto{
 
-width: 100%;
 font-family: $fuente;
 }
 .contacto_titulo2{
@@ -40,53 +43,48 @@ font-size: 32px;
 margin: 20px 0px 20px 0px;
 text-align: center;
 }
-.contacto_align{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
+
 .contacto_form{
-color: aliceblue;
-font-size: 18px;
-margin: 10px;
-width: 80%;
-
-}
-
-.contacto_botones{
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+	background-attachment: fixed;
 	display: flex;
-    width: 70%;
-    flex-direction: column;
-    align-items: center;
+	color:white;
+	text-shadow: 3px 3px 10px rgb(0, 0, 0);
+	text-align: center;
+	font-family:$fuente; 
+	flex-wrap: wrap;
+	overflow: hidden;
+	justify-content: center;
+	min-height: 85vh;
+
 }
-.contacto_enviar{
+
+.contacto_inputs{
+	align-items: center;
 	border: 0;
-	margin: 1rem;
-    background-color: $color-foot;
-    color: black;
-    font-family: "Cabin", sans-serif;
-    font-size: 20px;
-    width: 50%;
-    min-height: 2rem;
-	text-transform: uppercase;
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: 300;
+	flex-direction: row;
+    font-size: 1.5rem;
+	justify-content: space-between;
+    margin: 0.7rem;
+	padding: 0.2rem;
+    width: 80%;
+}
+.contacto_div{
+	display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: left;
 	
 }
+.contacto_msj{
+	display: flex;
+    width: 100%;
+    flex-direction: column;
+	text-align: left;
+}
 
-.contacto_enviar:hover{
-	background-color: white;
-	color: #051e2c;
-
-}
-.contacto_borrar{
-	border: 0;
-	margin:1rem;
-	background-color: darkgray;
-	color: black;
-	font-size: 15px;
-	width:50%;
-	min-height: 1.7rem;
-}
-.contacto_borrar:hover{
-	background-color: $color-claro;
-	color: $color-foot;
-}

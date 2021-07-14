@@ -40,56 +40,86 @@
 }	
 
 .reservas__form{
-	background-image: url(../img/casabella.jpg);
+	background-image: url(../img/fondo-reservas.webp);
 	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+	background-attachment: fixed;
 	display: flex;
-	color:black;
-	text-shadow: 3px 3px 10px white;
+	color:white;
+	text-shadow: 3px 3px 10px rgb(0, 0, 0);
 	text-align: center;
 	font-family:$fuente; 
 	flex-wrap: wrap;
 	overflow: hidden;
 	justify-content: center;
 	min-height: 85vh;
+	
 }
 .reservas_inputs{
 	align-items: center;
 	border: 0;
 	display: flex;
-	font-weight: 600;
-	flex-direction: column;
+	flex-wrap: wrap;
+	font-weight: 300;
+	flex-direction: row;
     font-size: 1.5rem;
-	justify-content: center;
+	justify-content: space-between;
     margin: 0.7rem;
 	padding: 0.2rem;
-    width: 55%;
+    width: 80%;
        
 }
+.reservas_div{
+	display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: left;
+}
+
 .reservas_buttom{
 	font-family: $fuente;
 	font-size: 1.4rem;
 	border: 0;
-	margin: 1rem;
-	background-color:$color-foot;
+	background-color:grey;
 	text-align: center;
 	height: 3rem;
-	width: 45%;
+	width: 50%;
 }
 .reservas_buttom:hover{
 	background-color: white;
 	color: $color-oscuro;
-	font-weight: 700;
+	font-weight: 600;
+	transition-property: background-color, color;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: 1;
+	-o-transition-property: background-color, color;
+	-o-transition-duration: 1s;
 
 }
 .reservas_buttom1{
-	width: 50%;
+	
 	font-family: $fuente;
 	font-size: 1.4rem;
 	border: 0;
-	margin: 1rem;
 	background-color:$color-oscuro;
 	color: white;
 	text-align: center;
 	height: 3rem;
-	width: 45%;
+	width: 50%;
+}
+.reservas_buttom1:hover{
+	transition-property: background-color, color;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: 1;
+	-o-transition-property: background-color, color;
+	-o-transition-duration: 1s;
+	background-color: aliceblue ;
+	color: $color-oscuro ;
+	font-weight: 500;
+
 }

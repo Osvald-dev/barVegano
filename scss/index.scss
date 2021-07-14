@@ -20,9 +20,46 @@
 body{
 	background-image: linear-gradient(#051e2c, rgb(4, 21, 36));
 }
+/* Animación Titulos y parrafos hero */
+.animacion-entrada {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+     }
+}
+
+.animacion-entrada-delay{
+  animation-delay: 0.3s
+}
+
+
 /* Mediqueries  */
 @media only screen and (max-width:679px){
 
+	.reservas_inputs{
+		flex-direction: column;
+		width: 90%;
+	}
+	.reservas_div{
+		width: 90%;
+	}
+	.reservas_buttom{
+		width: 100%;
+	}
+	.reservas_buttom1{
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width:991px) {
@@ -106,10 +143,32 @@ legend{
 	margin-top: 1rem;
 }
 .reservas_inputs{
-	width: 80%;
+	width: 90%;
 }
 .reservas_parrafo{
 	padding: 0.5rem;
 }
-
+.contacto_input{
+	flex-direction: column;
 }
+.contacto_div{
+	font-size: 1.2rem;
+	width: 100%;
+}
+
+.reservas_input{
+	flex-direction: column;
+}
+.reservas_div{
+	width: 100%;
+}
+.reservas_buttom{
+	width: 100%;
+}
+.reservas_buttom1{
+	width: 100%;
+}
+}
+
+
+
