@@ -647,17 +647,6 @@ body {
   animation-delay: 0.3s; }
 
 /* Mediqueries  */
-@media only screen and (max-width: 679px) {
-  .reservas_inputs {
-    flex-direction: column;
-    width: 90%; }
-  .reservas_div {
-    width: 90%; }
-  .reservas_buttom {
-    width: 100%; }
-  .reservas_buttom1 {
-    width: 100%; } }
-
 @media only screen and (max-width: 991px) {
   .encabezado__nav {
     display: flex;
@@ -680,6 +669,19 @@ body {
   .nosotros__card {
     width: 35%; } }
 
+@media only screen and (max-width: 679px) {
+  .reservas_inputs {
+    flex-direction: column;
+    width: 90%; }
+  .reservas_div {
+    width: 90%; }
+  .reservas_buttom {
+    width: 100%; }
+  .reservas_buttom1 {
+    width: 100%; }
+  .nosotros__card {
+    width: 80%; } }
+
 @media only screen and (max-width: 375px) {
   .encabezado__nav {
     display: flex;
@@ -696,8 +698,6 @@ body {
     font-size: 35px; }
   .eventos__section {
     min-height: 180vh; }
-  .eventos__flip {
-    height: 120vh; }
   .enlaceUno_img {
     width: 100%; }
   .nosotros__titulo {
@@ -727,4 +727,12 @@ body {
   .reservas_buttom {
     width: 100%; }
   .reservas_buttom1 {
-    width: 100%; } }
+    width: 100%; }
+  .eventos_1 {
+    width: 90%; }
+  .ancho_boton {
+    flex-direction: column; }
+  .ancho_menu {
+    width: 90%; }
+  .ancho_reservar {
+    width: 90%; } }
